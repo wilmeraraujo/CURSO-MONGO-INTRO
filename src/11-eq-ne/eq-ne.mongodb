@@ -1,0 +1,18 @@
+//use("platzi_store")
+//$eq
+/*
+//implicita
+db.inventory.find({qty:20})
+//explicita
+db.inventory.find({qty:{$eq:20}})
+*/
+/*
+//busqueda por subdocumento
+use("platzi_store")
+//db.inventory.find({"item.name":"ab"})
+db.inventory.find({"item.name":{$eq:"ab"}})
+*/
+
+//$ne  => explicita
+use("platzi_store")
+db.inventory.find({"item.name":{$ne:"ab"}})

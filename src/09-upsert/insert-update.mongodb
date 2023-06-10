@@ -1,10 +1,26 @@
 use("platzi_store")
+
+//agregar el primer valor
 /*db.iot.insertOne({
-    sensor:"2022-01-03",
+    sensor:"A001",
+    date:"2022-01-03",
     readings:[1212]
 })*/
-
-db.iot.insertOne({
-    sensor:"2022-01-03",
-    readings:[1212]
+//eliminar el primero o el utimo elemento de un array
+/*db.iot.updateOne({
+    sensor:"A001",
+    date:"2022-01-03",
+},{
+    $pop:{
+        readings:[1]
+    }    
+})*/
+//insertar cuando ya hay valores
+db.iot.updateOne({
+    sensor:"A001",
+    date:"2022-01-03",
+},{
+    $push:{
+        readings:2323
+    }    
 })

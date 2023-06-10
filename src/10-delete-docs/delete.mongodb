@@ -1,0 +1,7 @@
+//eliminar documentos
+
+use("platzi_store")
+//db.products.deleteOne({_id: ObjectId("1212")})
+//db.products.deleteOne({_id: 1})
+//db.products.deleteMany({price: 100})
+db.products.drop()

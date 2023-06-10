@@ -1,0 +1,11 @@
+use("sample_training")
+db.trips.find(
+    //query
+    {
+        tripduration:{$gte:500}
+    },
+    //projection => esto es igual a un select en el cual se obtiene los campos que necesita
+    {
+        tripduration: 1,usertype: 1
+    }
+)

@@ -22,3 +22,4 @@ docker-compose up -d mongodb
 --8 instalacion mongo con docker y coneccion por visual code al local
 --9
 --16
+--23

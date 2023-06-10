@@ -1,0 +1,12 @@
+use("platzi_store")
+//para insertar el primer registro u otro registro
+db.iot.updateOne({
+    sensor:"A001",
+    date:"2022-01-04",
+},{
+    $push:{
+        readings:2323
+    }    
+},{
+    upsert:true    
+})

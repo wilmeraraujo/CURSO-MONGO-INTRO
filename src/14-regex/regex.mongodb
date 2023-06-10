@@ -1,0 +1,17 @@
+use("platzi_store")
+//expresiones regulares deben estar entre /ejemplo/
+//db.inventory.find({"item.description":{$regex:/line/}})
+
+//para mayusculas minusculas se aumenta la letra i al final
+//db.inventory.find({"item.description":{$regex:/line/i}})
+
+//termina en : para ello se utiliza $
+//db.inventory.find({"item.description":{$regex:/line$/i}})
+
+//inicie en : se utiliza el simbolo ^
+//db.inventory.find({"item.description":{$regex:/^single/i}})
+
+//para todos los parrafos:  se utiliza la letra m
+//esto se da si existen saltos de linea
+db.inventory.find({"item.description":{$regex:/^s/im}})
+
