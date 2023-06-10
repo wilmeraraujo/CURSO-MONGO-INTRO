@@ -1,8 +1,24 @@
 --gitignore.io
 https://www.toptal.com/developers/gitignore
+# gitignore.io
+agregar => windows linux macOS => crear y copiar el contenido y pegarlo en el archivo gitignore
+
 
 --github gist
 https://gist.github.com/nicobytes/fbd8c63977217855ba8afd3e240651c9
 
+
+# editconfig
+https://gist.github.com/nicobytes/fbd8c63977217855ba8afd3e240651c9
+
 --intalar 
 MongoDB for VS Code
+
+--7 instalar docker
+hub.docker.com
+
+docker-compose up -d mongodb
+
+--8 instalacion mongo con docker y coneccion por visual code al local
+--9
+--16

@@ -1,0 +1,12 @@
+use("platzi_store")
+db.products.updateOne(
+    //query cuando el documento tiene un idObject por defecto
+    {
+        _id: ObjectId('2fd1a2121asdf1asdf1asf')
+    },
+    {
+        $set: {
+            name:"change name"
+        }
+    }    
+)

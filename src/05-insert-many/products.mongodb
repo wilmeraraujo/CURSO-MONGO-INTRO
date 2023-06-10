@@ -1,0 +1,23 @@
+use("platzi_store")
+db.products.drop()
+db.products.insertMany([
+    {
+        _id:1,
+        name:"product_1",
+        price:100
+    },
+    {
+        _id:2,
+        name:"product_2",
+        price:200
+    },
+    {
+        _id:3,
+        name:"product_3",
+        price:300
+    }
+],{
+    ordered: false //esta sentencia se la utiliza para que inserte solo los datos correctos, esdecir si existe un id repetido no lo insertara
+})
+
+db.products.find()

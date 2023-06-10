@@ -1,0 +1,24 @@
+//quitar elementos de un array
+//quitar un elemento
+/*use("platzi_store")
+db.inventory.updateMany(
+    {},
+    {
+        $pull:{
+            tags:"book"
+        }
+    }
+)*/
+
+//quitar varios elementos
+use("platzi_store")
+db.inventory.updateMany(
+    {},
+    {
+        $pull:{
+            tags:{
+                $in:["appliance","school"]
+            }
+        }
+    }
+)
